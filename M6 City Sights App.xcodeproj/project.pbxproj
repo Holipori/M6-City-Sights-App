@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		062EAD97290C542800CB6C50 /* M6_City_Sights_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EAD96290C542800CB6C50 /* M6_City_Sights_AppApp.swift */; };
+		062EAD97290C542800CB6C50 /* M6_CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EAD96290C542800CB6C50 /* M6_CitySightsApp.swift */; };
 		062EAD99290C542800CB6C50 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062EAD98290C542800CB6C50 /* LaunchView.swift */; };
 		062EAD9B290C542A00CB6C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062EAD9A290C542A00CB6C50 /* Assets.xcassets */; };
 		062EAD9E290C542A00CB6C50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062EAD9D290C542A00CB6C50 /* Preview Assets.xcassets */; };
+		0684BC42290D9A6D001A243D /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0684BC41290D9A6D001A243D /* ContentModel.swift */; };
+		06FD9F81290EF4FA006B84B1 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FD9F80290EF4FA006B84B1 /* Business.swift */; };
+		06FD9F83290EF64B006B84B1 /* BussinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FD9F82290EF64B006B84B1 /* BussinessSearch.swift */; };
+		06FD9F86290EF811006B84B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FD9F85290EF811006B84B1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		062EAD93290C542800CB6C50 /* M6 City Sights App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M6 City Sights App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		062EAD96290C542800CB6C50 /* M6_City_Sights_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M6_City_Sights_AppApp.swift; sourceTree = "<group>"; };
+		062EAD96290C542800CB6C50 /* M6_CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M6_CitySightsApp.swift; sourceTree = "<group>"; };
 		062EAD98290C542800CB6C50 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		062EAD9A290C542A00CB6C50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062EAD9D290C542A00CB6C50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0684BC41290D9A6D001A243D /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		06BFC918290DA08F00DE745C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06FD9F80290EF4FA006B84B1 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		06FD9F82290EF64B006B84B1 /* BussinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessSearch.swift; sourceTree = "<group>"; };
+		06FD9F85290EF811006B84B1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,11 +60,13 @@
 		062EAD95290C542800CB6C50 /* M6 City Sights App */ = {
 			isa = PBXGroup;
 			children = (
-				062EAD96290C542800CB6C50 /* M6_City_Sights_AppApp.swift */,
+				062EAD96290C542800CB6C50 /* M6_CitySightsApp.swift */,
 				062EADA6290C552700CB6C50 /* Views */,
 				062EADA5290C552100CB6C50 /* ViewModels */,
 				062EADA4290C551800CB6C50 /* Models */,
+				06FD9F84290EF800006B84B1 /* Helpers */,
 				062EAD9A290C542A00CB6C50 /* Assets.xcassets */,
+				06BFC918290DA08F00DE745C /* Info.plist */,
 				062EAD9C290C542A00CB6C50 /* Preview Content */,
 			);
 			path = "M6 City Sights App";
@@ -72,6 +83,8 @@
 		062EADA4290C551800CB6C50 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				06FD9F80290EF4FA006B84B1 /* Business.swift */,
+				06FD9F82290EF64B006B84B1 /* BussinessSearch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -79,6 +92,7 @@
 		062EADA5290C552100CB6C50 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0684BC41290D9A6D001A243D /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -89,6 +103,14 @@
 				062EAD98290C542800CB6C50 /* LaunchView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		06FD9F84290EF800006B84B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				06FD9F85290EF811006B84B1 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				062EAD99290C542800CB6C50 /* LaunchView.swift in Sources */,
-				062EAD97290C542800CB6C50 /* M6_City_Sights_AppApp.swift in Sources */,
+				06FD9F83290EF64B006B84B1 /* BussinessSearch.swift in Sources */,
+				06FD9F81290EF4FA006B84B1 /* Business.swift in Sources */,
+				062EAD97290C542800CB6C50 /* M6_CitySightsApp.swift in Sources */,
+				0684BC42290D9A6D001A243D /* ContentModel.swift in Sources */,
+				06FD9F86290EF811006B84B1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +318,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"M6 City Sights App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "/Users/xinyuehu/Documents/AppDev/M6 City Sights App/M6 City Sights App/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Testing;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,7 +348,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"M6 City Sights App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "/Users/xinyuehu/Documents/AppDev/M6 City Sights App/M6 City Sights App/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Testing;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
