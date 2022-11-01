@@ -15,6 +15,8 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     @Published var restaurants = [Business]()
     @Published var sights = [Business]()
     
+    @Published var authorizationState = CLAuthorizationStatus.notDetermined
+    
     override init() {
         // Init method of NSObject
         super.init()
@@ -32,6 +34,9 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
     
     // MARK: Location Manager Delegate Methods
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+
+        //update
+        authorizationState = locationManager.authorizationStatus
         
         if locationManager.authorizationStatus == .authorizedAlways ||
             locationManager.authorizationStatus == .authorizedWhenInUse {
@@ -70,7 +75,7 @@ class ContentModel: NSObject, CLLocationManagerDelegate, ObservableObject {
         urlConponents?.queryItems = [
             URLQueryItem(name: "latitude", value: String(location.coordinate.latitude)),
             URLQueryItem(name: "longitude", value: String(location.coordinate.longitude)),
-            URLQueryItem(name: "category", value: Constants.restaurantsKey),
+            URLQueryItem(name: "category", value: category),
             URLQueryItem(name: "limit", value: "6")
         ]
         var url = urlConponents?.url
